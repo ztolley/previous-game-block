@@ -1,0 +1,62 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/previous-game",
+	"version": "0.1.0",
+	"title": "Previous Game",
+	"category": "widgets",
+	"icon": "excerpt-view",
+	"description": "Previous game scores and date",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "previous-game",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./index.css",
+  "attributes": {
+    "awayTeamName": {
+      "type": "string",
+      "default": "Away Team Name",
+      "source": "html",
+      "selector": "div"
+    },
+    "awayTeamScore": {
+      "type": "string",
+      "default": "0",
+      "source": "html",
+      "selector": "div"
+    },
+    "homeTeamName": {
+      "type": "string",
+      "default": "Home Team Name",
+      "source": "html",
+      "selector": "div"
+    },
+    "homeTeamScore": {
+      "type": "string",
+      "default": "0",
+      "source": "html",
+      "selector": "div"
+    },
+    "homeAway": {
+      "type": "string",
+      "default": "Away/Home",
+      "source": "html",
+      "selector": "div"
+    },
+    "date": {
+      "type": "string",
+      "default": "dd/mm/yyyy",
+      "source": "html",
+      "selector": "div"
+    },
+    "imageURL": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "src",
+      "selector": "img"
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.previous-game {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .previous-game {
+    padding: 0.5rem;
+  }
+}
+
+.previous-game__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 0.5rem 0;
+}
+
+.previous-game__headerLabel,
+.previous-game__homeAway {
+  font-size: var(--wp--preset--font-size--small);
+  color: var(--wp--preset--color--contrast);
+  font-weight: 400;
+  text-transform: none;
+}
+
+.previous-game__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto 0;
+}
+
+.previous-game__teamInfo {
+  position: relative;
+  display: block;
+}
+
+.previous-game__team {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  color: var(--wp--preset--color--contrast-2);
+  font-size: var(--wp--preset--font-size--small);
+}
+
+.previous-game__teamName {
+  position: relative;
+  margin: 0 0 0 0.5rem;
+  font-size: var(--wp--preset--font-size--small);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+  .previous-game__teamName {
+    margin: 0;
+    font-size: var(--wp--preset--font-size--small);
+  }
+}
+
+@media screen and (max-width: 809px) {
+  .previous-game__teamName {
+    margin: 0;
+    font-size: var(--wp--preset--font-size--medium);
+  }
+}
+
+.previous-game__teamName::before {
+  position: absolute;
+  content: "";
+  left: -12px;
+  top: 0;
+  bottom: 0;
+  background-color: #aaa;
+  width: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+  .previous-game__teamName::before {
+    left: -6px;
+  }
+}
+
+.previous-game__info {
+  line-height: 1.25;
+}
+
+.previous-game__score {
+  font-size: var(--wp--preset--font-size--large);
+  position: relative;
+  margin: 0;
+  padding: 0 0.5rem 0 0;
+  width: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .previous-game__score {
+    padding: 0 0.5rem 0 0;
+    font-size: var(--wp--preset--font-size--small);
+    width: 1rem;
+  }
+}
+
+.previous-game strong {
+  color: var(--wp--preset--color--contrast);
+}
+
+.previous-game__crest {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem 0 0;
+}
+.previous-game__crest > img {
+  width: 68px;
+  height: 68px;
+}
+
+@media screen and (max-width: 1024px) {
+  .previous-game__crest > img {
+    width: 34px;
+    height: 34px;
+  }
+}
